@@ -21,3 +21,5 @@
     section Documentation
     Project Report         :a11, 2024-09-25, 45d
 ```
+## Building Knowledge Base for the ChatBot
+### Website Scrapping : [Approach](https://drive.google.com/file/d/1ajjx_PosH8Q_Cal0_1FQfnxrqMrRcjQB/view?usp=sharing)
