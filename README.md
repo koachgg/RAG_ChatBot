@@ -74,6 +74,16 @@ The project directory (`RAG_ChatBot/`) is organized as follows:
 ```text
 .
 ├── README.md                       # This file: Project overview, setup, and usage instructions.
+├── main.ipynb                      # **Core RAG Pipeline & Chatbot Implementation**:
+│                                   #   - Input: Reads cleaned data (e.g., `cs_du_scraped_data_clean - DEMO.csv` from Google Drive).
+│                                   #   - Generates vector embeddings using `all-MiniLM-L6-v2`.
+│                                   #   - Builds and saves a FAISS vector index (`csdu_faiss_index.index`).
+│                                   #   - Saves embeddings (`csdu_embeddings.npy`) and texts (`csdu_texts.json`).
+│                                   #   - Implements the `RAGChatbot` class using Google Gemini (`gemini-pro`) for generation.
+│                                   #   - Retrieves relevant context from FAISS based on user queries.
+│                                   #   - Generates responses and provides example interactions.
+│                                   #   - Note: Requires Google API Key and mounts Google Drive for data input.
+│
 ├── crawl.ipynb                     # Jupyter Notebook for:
 │                                   #   - Web scraping content from `cs.du.ac.in`.
 │                                   #   - Initial text cleaning (HTML removal, basic normalization).
